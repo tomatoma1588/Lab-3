@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop Form</title>
+    <style>
+        /* Стилізація загальної таблиці */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd; /* колір рамки */
+        }
+
+        th, td {
+            border: 1px solid #ddd; /* колір рамки */
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Стилізація кнопки */
+        .button {
+            background-color: #808080; /* Сірий колір */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 0;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <table>
+        <tr>
+            <th colspan="2">Pszza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Pizza Topping</td>
+            <td>
+                <div class="radio-label">
+                    <input type="radio" id="supreme" name="topping" value="Supreme">
+                    <label for="supreme">Supreme</label><br>
+                </div>
+                <div class="radio-label">
+                    <input type="radio" id="vegetarian" name="topping" value="Vegetarian">
+                    <label for="vegetarian">Vegetarian</label><br>
+                </div>
+                <div class="radio-label">
+                    <input type="radio" id="hawaiian" name="topping" value="Hawaiian">
+                    <label for="hawaiian">Hawaiian</label><br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+                <div class="select-wrapper">
+                    <select name="sauce">
+                        <option value="Pesto">Pesto</option>
+                        <option value="Alfredo">Alfredo</option>
+                        <option value="Cheesy">Cheesy</option>
+                        <option value="Sweet chili">Sweet chili</option>
+                    </select>
+                    <div class="select-icon">▼</div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Optional Extras</td>
+            <td>
+                <div class="checkbox-label">
+                    <input type="checkbox" id="extra-cheese" name="extras" value="Extra Cheese">
+                    <label for="extra-cheese">Extra Cheese</label><br>
+                </div>
+                <div class="checkbox-label">
+                    <input type="checkbox" id="gluten-free" name="extras" value="Gluten Free Basc">
+                    <label for="gluten-free">Gluten Free Basc</label><br>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Delivery Instruction<br>
+                <textarea name="delivery_instructions" rows="4"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:left;">
+                <button class="button">Send my Order</button>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
